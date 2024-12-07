@@ -9,8 +9,8 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        // quangvantiepp.kesug.com website deploy on the infinity free
-        registry.addMapping("/**").allowedOrigins("http://localhost:3000", "quangvantiepp.kesug.com")
+        // quangvantiepp.kesug.com website deploy on the Render
+        registry.addMapping("/**").allowedOrigins("http://localhost:3000", "https://react-home-template.onrender.com/")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
