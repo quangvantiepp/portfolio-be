@@ -51,7 +51,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                   .sessionCreationPolicy(SessionCreationPolicy.STATELESS)// disable create session cookie
                 .and()
                 .authorizeHttpRequests()
-                .antMatchers("/api/login", "/api/logout", "/api/refresh-token", "/api/user/register" ).permitAll()
+                .antMatchers("/api/login", "/api/logout", "/api/refresh-token", "/api/user/register", "/api/customer/register" ).permitAll()
                 .antMatchers(
                         "/v3/api-docs/**",
                         "/swagger-ui/**",
